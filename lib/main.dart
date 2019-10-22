@@ -77,9 +77,7 @@ class _FirstPageState extends State<FirstPage> {
                   children: <Widget>[
                     FlatButton(
                       onPressed: () {
-                        setState(() {
-                          secondPageImage = bigImage;
-                        });
+                        setState(() => secondPageImage = bigImage);
                         Navigator.push(
                           context,
                           MaterialPageRoute(
